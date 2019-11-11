@@ -1,0 +1,46 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 16px/1.5 Helvetica, Arial;
+}
+#bg {
+  /* background-image: url(../img/banner6b.png); */
+  background-image: url(../img/background4.jpg);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* align-items: center; */
+  display: flex;
+}
+#content {
+  /* padding: 150px 600px; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  background-color: #ddd;
+  margin: auto;
+  width: 55%;
+}
+h1,
+h2 {
+  color: #ddd;
+  font-size: 64px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin: 0;
+}
+h2 {
+  font-size: 24px;
+}
+p {
+  background-color: rgba(221, 221, 221, 0.75);
+  padding: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  text-align: justify;
+  text-justify: inter-word;
+}

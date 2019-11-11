@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kasper Portfoliosite</title>
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+  <body>
+    <div id="bg"></div>
+    <div id="contentbox">
+      <div id="dragbar">
+        <div id="titel"></div>
+        <div id="buttonbox">
+          <button id="b1" onclick="minimize()"></button>
+          <button id="b2" onclick="fullscreen()"></button>
+          <button id="b3"></button>
+        </div>
+      </div>
+      <div id="navContent">
+        <div id="nav">
+          <canvas id="portrait" width="150" height="150"></canvas>
+          <button id="resetbut" type="button">
+            <i class="fas fa-undo"></i>
+          </button>
+          <img id="pic" src="img/self2.jpg" alt="portrait" />
+          <h1>Kasper Smits</h1>
+          <h2>Java trainee Young Capital</h2>
+          <ul id="navbar">
+            <li>
+              <a class="but active" href="#about"
+                ><i class="far fa-address-card"></i> About</a
+              >
+            </li>
+            <li>
+              <a class="but" href="#skills"
+                ><i class="fas fa-code"></i> Skills</a
+              >
+            </li>
+            <li>
+              <a class="but" href="#education"
+                ><i class="fas fa-graduation-cap"></i> Education</a
+              >
+            </li>
+            <li>
+              <a class="but" href="#projects"
+                ><i class="fas fa-cog"></i> Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div id="content">
+          <div class="cont" id="about">
+            <div id="flexabout">
+              <div id="kort">
+                <h3 id="h3ove">Over mij</h3>
+                <!-- Welkom op mijn portfoliosite! Hier kun allerlei informatie over
+                mij vinden en ook ben ik van plan hier al mijn
+                programmeerprojecten te plaatsen. In mijn vrije tijd ben ik
+                graag bezig met programmeren en sport, voornamelijk fitness en
+                boulderen (klimmuren van 4 meter). Mijn interesse in
+                programmeren begon al vroeg met game development. Ik heb toen
+                zowel zelfstandig als met vrienden gewerkt aan een aantal hobby
+                projecten, waaronder een puzzel app voor de mobiel. Ik ben
+                uiteindelijk afgestudeerd in Biologie en Medisch Labonderzoek
+                omdat ik de werking van medicijnen en biologische processen in
+                de mens super interessant vind. Ik miste echter het programmeren
+                en wilde me er meer in verdiepen. Ik heb me toen via
+                YoungCapital NEXT laten omscholen tot Junior Java Developer.
+                Sindsdien ben ik weer volop bezig om meer te leren op het gebied
+                van programmeren. Onderwerpen waar ik op dit moment bezig ben om
+                meer van te leren zijn algoritmes visualisaties, Machine
+                Learning en verbindingen tussen verschillende systemen. -->
+                <p id="povermij"></p>
+              </div>
+              <br />
+              <div id="hobbys">
+                <h3 id="h3hob">Lievelings...</h3>
+                <!-- <p>
+                  <b>Sport:</b> <a class="gif">Fitness</a> / <a class="gif">Boulderen</a> <br />
+                  <b>Film:</b> <a class="gif">No Country for Old Men</a> <br />
+                  <b>Series:</b> <a class="gif">Twin Peaks</a> / <a class="gif">The Office</a> <br />
+                  <b>Game:</b> <a class="gif">TLOZ: Ocarina of Time</a> <br />
+                  <b>Eten:</b> <a class="gif">Hamburger</a> <br />
+                  <b>Drinken:</b> <a class="gif">Koffie</a>
+                </p> -->
+                <p id="phobbys"></p>
+              </div>
+            </div>
+            <!-- <div id="flexabout">
+              <div id="dezesite">
+                <h3 id="h3dez">Deze site</h3>
+                <p id="pdezesite"></p>
+              </div>
+              <div id="hobbys2">
+                <h3 id="h3hob2">Hobby's2</h3>
+                <p id="phobbys2"></p>
+              </div>
+            </div> -->
+          </div>
+          <div class="cont" id="skills">
+            <h3 id="h3pro">Talen</h3>
+            <canvas height="150px" width="150px" id="canvjava"></canvas>
+            <canvas height="150px" width="150px" id="canvjavascript"></canvas>
+            <canvas height="150px" width="150px" id="canvcss"></canvas>
+            <canvas height="150px" width="150px" id="canvhtml"></canvas>
+            <br />
+            <h3 id="h3fra">Tools</h3>
+            <canvas height="150px" width="150px" id="canvangular"></canvas>
+            <canvas height="150px" width="150px" id="canvspring"></canvas>
+          </div>
+          <div class="cont" id="education">
+            <h3 id="h3opl">Opleidingen</h3>
+            <canvas height="465px" width="400px" id="canveducation"></canvas>
+            <!-- <canvas height="465px" width="350px" id="canvwork"></canvas> -->
+            <!-- <img src="img/education8b.png" alt="eduimg" /> -->
+          </div>
+          <div class="cont" id="projects">
+            <h3 id="h3proj">Projecten</h3>
+            1.
+            <a href="/gidrone.html" target="_blank"
+              >Kortste route (Heap's algoritme)</a
+            >
+            <p>More coming soon!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="javascript/dragable.js"></script>
+    <script src="javascript/about.js"></script>
+    <script src="javascript/skillbars.js"></script>
+    <script src="javascript/education.js"></script>
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/gidrone.js"></script>
+    <script src="javascript/portrait.js"></script>
+    <script src="javascript/gifs.js"></script>
+  </body>
+</html>

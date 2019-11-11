@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project GI Drone</title>
+    <!-- <link rel="icon" href="img/tabicon6.png" /> -->
+    <link rel="stylesheet" href="css/styleprojects.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+  <body>
+    <div id="navbar">
+      <a>project GIDrone</a>
+      <!-- href="/index.html#projects" -->
+    </div>
+
+    <div id="content">
+      <canvas id="canvas" width="800" height="400"></canvas>
+    </div>
+    <button type="button" id="button1">calculate path</button>
+    <button type="button" id="button2">reset pins</button>
+
+    <div id="description">
+      <br />
+      <h2>Wat is het</h2>
+      <p>
+        Ik heb online een aantal programmeerprojecten gezien waarin mensen
+        algoritmes zoals Dijkstra's algoritme en sorterende algoritmes
+        visualiseerden en wou dat graag zelf ook doen. In dit geval is het
+        gedaan met Heap's algoritme. Dit is een algoritme dat gebruikt wordt om
+        elk mogelijke permutatie te genereren van een aantal objecten. In dit
+        geval gaat het algoritme elke mogelijke route langs tussen een aantal
+        zelf geplaatste punten op de kaart. Bij elke mogelijke route wordt de
+        afstand berend en de kortste afstand wordt onthouden en uiteindelijk
+        weergeven.
+      </p>
+      <br />
+      <h2>Hoe werkt het</h2>
+      <p>
+        Klik tot 6 plaatsen (meer dan 6 duurt nu nog te lang) op de kaart om een
+        pin te plaatsen . Klik op "Calculate Path" om de kortste route tussen de
+        geplaatste pinnen te berekenen en op "reset pins" om de geplaatste
+        pinnen van de kaart te verwijderen.
+      </p>
+      <br />
+      <h2>Wat ik nog wil doen</h2>
+      <p>
+        Het algoritme aanpassen zodat routes met meerdere punten sneller
+        berekend kunnen worden. Ik vond dit leuk om te maken en zou graag meer
+        algoritmes op deze manier willen uitwerken.
+      </p>
+      <br />
+      <h2>Waar kan het op toegepast worden</h2>
+      <p>
+        Het oorspronkelijke idee van dit project was dat het de kortste route
+        berekend voor drones die pakketjes afleveren op verschillende addressen.
+        Hier vanuit wordt wel vanuit gegaan dat drones in rechte lijnen van punt
+        a naar punt b kunnen vliegen maar je kan dit ook toepassen op andere
+        manieren van vervoer (auto, fiets, ov, etc.) zolang je maar de
+        resitijden kan achterhalen tussen de verschillende punten. Het zou dus
+        toegepast kunnen worden op google maps en verschillende bezorg services
+        (PostNL, DHL, etc.) waarbij je langs meerdere punten moet.
+      </p>
+    </div>
+
+    <!-- <div id="footer">
+      <p>
+        Kasper Smits© 2019
+        <a
+          href="https://www.linkedin.com/in/kasper-smits-595836182/"
+          class="fab fa-linkedin"
+          target="_blank"
+        >
+        </a
+        ><a href="mailto:kasper-92@hotmail.com" class="fas fa-mail-bulk"></a>
+      </p>
+    </div> -->
+
+    <script src="javascript/gidrone.js"></script>
+  </body>
+</html>

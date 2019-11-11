@@ -1,0 +1,324 @@
+:root {
+  --bgcolor: rgba(221, 221, 221, 0.25);
+}
+
+* {
+  font: 16px/1.5 Karla, Arial, sans-serif;
+  color: rgb(40, 40, 40);
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+  font-family: Roboto, Consolas;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: Roboto, Consolas;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: Roboto, Consolas;
+  font-weight: 550;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* BANNER */
+#banner {
+  background: url(../img/banner6b.png);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#idbox {
+  width: 500px;
+  height: 176px;
+  background-color: rgba(42, 41, 32, 0.5);
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  overflow: hidden;
+}
+
+#idbox img {
+  border-radius: 50%;
+  margin: 10px;
+  height: 150px;
+  width: 150px;
+  border: 3px solid white;
+}
+
+#idbox #idtext {
+  padding: 15px;
+}
+
+#idbox h1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: white;
+}
+
+#idbox p {
+  font-size: 20px;
+  color: #ddd;
+}
+
+/* NAVIGATION */
+#navbar {
+  background-color: rgb(32, 35, 42);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+#navbar a {
+  color: white;
+  color: #ddd;
+  display: block;
+  text-align: center;
+  padding: 8px 50px;
+  font-size: 22px;
+  font-weight: 300;
+  text-decoration: none;
+  /* width: 6%; */
+  min-width: 75px;
+  border-top: 3px solid #20232a;
+  border-bottom: 3px solid #20232a;
+}
+
+#navbar a:hover {
+  color: white;
+}
+
+#navbar .active {
+  border-bottom: 3px solid white;
+}
+
+/* CONTENT */
+/* GENERAL */
+#content {
+  text-align: justify;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  /* min-height: 2400px; */
+}
+
+.contentbox {
+  width: 45%;
+  width: 850px;
+  min-width: 400px;
+  margin: 100px auto;
+}
+
+@media screen and (max-width: 950px) {
+  .contentbox {
+    width: 90%;
+  }
+}
+
+/* CONTENT */
+/* SKILLS */
+#skillbox {
+  width: 100%;
+  background-color: rgba(221, 221, 221, 0.4);
+  height: 30px;
+  border-radius: 5px;
+}
+
+.skillbar {
+  text-align: right;
+  background-color: #426ad7;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.skillbar#java {
+  background-color: rgba(224, 68, 68, 0.8);
+  width: 65%;
+}
+.skillbar#javascript {
+  background-color: rgb(245, 214, 77, 0.8);
+  width: 25%;
+}
+.skillbar#css {
+  background-color: rgb(55, 112, 243, 0.8);
+  width: 45%;
+}
+.skillbar#html {
+  background-color: rgb(59, 190, 98, 0.8);
+  width: 50%;
+}
+.skillbar#angular {
+  background-color: rgb(106, 43, 207, 0.8);
+  width: 32%;
+}
+.skillbar#spring {
+  background-color: rgba(238, 165, 81, 0.8);
+  width: 31%;
+}
+
+.skilltag {
+  text-align: center;
+  border-radius: 4px;
+  height: 30px;
+  background-color: rgb(241, 241, 241);
+  border-right: 3px solid black;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 150px;
+}
+
+.skilltag h3 {
+  font-size: 20px;
+}
+
+/* CONTENT */
+/* EDUCATION */
+#eduflex {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.edubox {
+  background-color: rgba(221, 221, 221, 0.3);
+  width: 100%;
+  height: 90px;
+  border-radius: 5px;
+  margin: 0px 15px 15px 0px;
+  padding: 5px 10px;
+}
+
+/* CONTENT */
+/* PROJECTS */
+#proflex {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.probox {
+  background-color: rgba(221, 221, 221, 0.3);
+  width: 20%;
+  height: 250px;
+  border-radius: 5px;
+  margin: 0px 15px 15px 0px;
+  padding: 5px 10px;
+}
+
+.icon {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.probox i {
+  font-size: 72px;
+  color: rgba(32, 35, 42, 0.25);
+}
+
+.probox i:hover {
+  color: #426ad7;
+}
+
+button {
+  width: 120px;
+  height: 25px;
+  border: 3px solid #426ad7;
+  border-radius: 5%;
+  margin-top: -3px;
+  background-color: rgba(66, 106, 215, 0.8);
+  color: aliceblue;
+  font: bold 14px Arial;
+}
+
+#button1 {
+  margin-left: 15px;
+}
+
+/* FOODER */
+#footer {
+  background-color: rgb(32, 35, 42);
+  width: 100%;
+  position: absolute;
+  height: 75px;
+  /* 123 */
+  /* padding-bottom: 150px; */
+  bottom: 0;
+}
+
+#footer p {
+  color: #ddd;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#footer a {
+  color: #ddd;
+  font-size: 26px;
+  text-decoration: none;
+  padding: 3px;
+}
+
+#footer a.fas {
+  font-size: 24px;
+}
+
+/* idk */
+tt {
+  color: #426ad7;
+  font-size: 28px;
+  font-family: Helvetica;
+  font-weight: 900;
+}
+
+hr {
+  border: 1px solid #ddd;
+}
+
+/* dit is het */
+#description {
+  margin: 20px;
+  width: 790px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+h2 {
+  font: 16px/1.5 Karla;
+  font-weight: bold;
+}

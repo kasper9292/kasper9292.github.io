@@ -1,0 +1,274 @@
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  font: 17px/1.5 Karla;
+}
+
+.load {
+  display: none;
+}
+
+#bg {
+  background-image: url(../img/banner6b.png);
+  background-image: url(../img/background16.jpg);
+  background-color: #37444d;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -5;
+  position: absolute;
+}
+
+#bg2 {
+  background-color: rgba(49, 54, 80, 0.158);
+  background-color: red;
+  margin-top: 300px;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+  position: absolute;
+}
+
+#contentbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 50%;
+  min-width: 1100px;
+  min-height: 600px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px 10px 0px 0px;
+}
+
+#contentbox #dragbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 45px;
+  background-color: #292d3e;
+  background-color: #1b1e2b;
+  background-color: #0f0f0f;
+  border-radius: 10px 10px 0px 0px;
+  cursor: move;
+}
+
+#contentbox #dragbar #titel {
+  width: 100%;
+  height: 100%;
+}
+
+#contentbox #dragbar #buttonbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100%;
+}
+
+#contentbox #dragbar #buttonbox button {
+  background-color: DodgerBlue;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 50%;
+  margin: 0px 5px;
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+}
+
+#contentbox #dragbar #buttonbox button:hover {
+  background-color: RoyalBlue;
+}
+
+#contentbox #dragbar #buttonbox #b1:hover {
+  background-color: rgba(245, 197, 70, 0.99);
+}
+
+#contentbox #dragbar #buttonbox #b2:hover {
+  background-color: rgba(58, 207, 81, 0.99);
+}
+
+#contentbox #dragbar #buttonbox #b3:hover {
+  background-color: rgba(231, 77, 86, 0.99);
+}
+
+#contentbox #navContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#contentbox #navContent #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+  height: 100%;
+  background-color: gainsboro;
+  background-color: rgba(220, 220, 220, 0.9);
+  background-color: rgba(41, 45, 62, 0.85);
+  background-color: #292d3e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#292d3e), to(#1a1c27));
+  background-image: linear-gradient(#292d3e, #1a1c27);
+}
+
+#contentbox #navContent #nav img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 10px;
+  border: 6px solid rgba(27, 30, 43, 0.75);
+  border: 5px solid rgba(12, 12, 12, 0.65);
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contentbox #navContent #nav ul {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0px;
+  width: 100%;
+}
+
+#contentbox #navContent #nav li {
+  width: 100%;
+}
+
+#contentbox #navContent #nav li a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+#contentbox #navContent #nav li:last-child {
+  border-bottom: none;
+}
+
+#contentbox #navContent #nav li a.active {
+  background-color: #c8c8c8;
+  background-color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+#contentbox #navContent #nav li a:hover:not(.active) {
+  background-color: #d2d2d2;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#contentbox #navContent #content {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: auto;
+}
+
+#dragbar h1 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 100;
+}
+
+#nav h1 {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 26px;
+  margin: 5px 0px 0px 0px;
+  padding: 0px;
+  color: #282828;
+  color: white;
+}
+
+#nav h2 {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  margin-top: -5px;
+  color: #282828;
+  color: #ddd;
+}
+
+#nav ul li a {
+  font-size: 19px;
+  font-weight: bold;
+  color: #454545;
+  color: #ddd;
+}
+
+#nav ul li a.active {
+  color: white;
+}
+
+#content::-webkit-scrollbar-track {
+  background-color: rgba(37, 37, 37, 0.25);
+}
+
+#content::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+#content::-webkit-scrollbar-thumb {
+  background-color: rgba(37, 37, 37, 0.75);
+}
+
+#portrait {
+  position: absolute;
+  z-index: 5;
+  border-radius: 50%;
+  margin: 12px 0px;
+  border: 3px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+#resetbut {
+  display: none;
+  top: 160px;
+  left: 150px;
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  position: absolute;
+  z-index: 5;
+  border-radius: 50%;
+  border: 5px solid rgba(12, 12, 12, 0.801);
+}
+/*# sourceMappingURL=style2.css.map */
